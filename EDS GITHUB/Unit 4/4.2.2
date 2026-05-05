@@ -1,0 +1,15 @@
+import pandas as pd
+
+# Prompt the user for the file name
+file_name = input()
+
+# Load the data
+df = pd.read_csv(file_name)
+product_sales=df.groupby('Product')['Quantity'].sum().reset_index()
+
+# Find the product with the highest total quantity sold
+best_product =product_sales.loc[product_sales['Quantity'].idxmax(),'Product']
+highest_quantity = product_sales['Quantity'].max()
+# Display the result
+print(f"Best selling product: {best_product}")
+print(f"Total quantity sold: {highest_quantity}")

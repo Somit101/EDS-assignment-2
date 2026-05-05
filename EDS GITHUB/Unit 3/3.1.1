@@ -1,0 +1,14 @@
+import numpy as np
+
+# write your code here...
+r,c = map(int,input().split())
+elements = []
+for i in range(r):
+	e=list(map(int,input().split()))
+	elements.append(e)
+arr = np.array(elements).reshape(r,c)
+
+print(arr)
+print(arr.ndim)
+print(arr.shape)
+print(arr.size)
