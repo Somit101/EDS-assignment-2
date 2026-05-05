@@ -1,0 +1,37 @@
+import pandas as pd
+import numpy as np
+
+# Load the Titanic dataset
+data = pd.read_csv('Titanic-Dataset.csv')
+data = pd.get_dummies(data, columns=['Embarked'], drop_first=True)
+
+
+# 1. Get the number of survivors by gender
+
+
+# 2. Get the number of non-survivors by gender
+
+
+# 3. Get the number of survivors by embarked location
+
+
+# 4. Get the number of non-survivors by embarked location
+
+
+# 5. Calculate the percentage of children (Age < 18) who survived
+
+
+# 6. Calculate the percentage of adults (Age >= 18) who survived
+
+
+# 7. Get the median age of survivors
+
+
+# 8. Get the median age of non-survivors
+
+
+# 9. Get the median fare of survivors
+
+
+# 10. Get the median fare of non-survivors
+
